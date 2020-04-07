@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="logo-burger">
+                <p class="logo">My Shark Website</p>
+                <div class="burger" id="burger">
+                    <span class="ham top"></span>
+                    <span class="ham middle"></span>
+                    <span class="ham bottom"></span>
+                </div>
+            </div>
+            <div class="ul-wrapper">
+                <ul>
+                    <li id="link-home">Home</li>
+                    <li id="link-about">About</li>
+                    <li id="link-works">Works</li>
+                    <li id="link-contact">Contact</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <h1 class="title">Sharks.</h1>
+        </div>
+
+        <div class="contents">
+            <div class="about" id="about">
+                <h1>About sharks...</h1>
+                <p>
+                    A long-bodied chiefly marine fish with a cartilaginous skeleton, a prominent dorsal fin, and toothlike scales. Most sharks are predatory, although the largest kinds feed on plankton, and some can grow to a large size.
+                </p>
+            </div>
+            <div class="works" id="works">
+                <h1 class="works-title">Shark works...</h1>
+                <img src="assets/img/s1.jpg" class="img">
+                <img src="assets/img/s2.jpg" class="img">
+                <img src="assets/img/s3.jpg" class="img">
+                <img src="assets/img/s4.jpg" class="img">
+                <img src="assets/img/s5.jpg" class="img">
+                <img src="assets/img/s6.jpg" class="img">
+                <img src="assets/img/s7.jpg" class="img">
+            </div>
+            <div class="contact" id="contact">
+                <h1>Contact a shark...</h1>
+                <form class="shark-form">
+                    <label for="your-name" class="form-item">Name</label>
+                    <input type="text" class="form-item" id="your-name" />
+                    <label for="your-email" class="form-item">Email</label>
+                    <input type="email" class="form-item" id="your-email" />
+                    <label for="your-inquiry" class="form-item">Inquiry</label>
+                    <textarea class="form-item" id="your-inquiry" rows="10" cols="20"></textarea>
+                    <div>
+                        <input type="submit" class="form-item" value="Submit" />
+                        <input type="reset" class="form-item" value="Clear" />
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+        <div class="custom-modal" id="custom-modal">
+            
+            <div class="custom-modal-content">
+                <img src="" id="custom-modal-image" class="custom-modal-image"/>
+                <p id="modal-close" class="custom-modal-close">Close</p>
+            </div>
+        </div>
+
+        <footer>
+            <small><center>Made with luv by Jonjon. 2020</center></small>
+        </footer>
+    </div>
+</body>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/burger.js"></script>
+<script src="assets/js/navi.js"></script>
+</html>

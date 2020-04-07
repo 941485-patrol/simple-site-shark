@@ -221,6 +221,10 @@ input {
 }
 
 
+.submit-clear {
+    height:2rem;
+}
+
 
 /* MEDIUM TO LARGE SCREEN */
 @media only screen and (min-width:850px) {

@@ -1,51 +1,38 @@
+const mobileClick = () => {
+    if (body.offsetWidth <= 850)
+    {
+        burger.click()
+
+        myUl.style.transition = "none"
+    }
+}
+
 linkHome.addEventListener("click", ()=> {
 
-    if (body.offsetWidth <= 850)
-    {
-        burger.click()
-
-        myUl.style.transition = "none"
-    }
-
-    window.scrollTo(0,0)
-    
+    mobileClick()
+ 
 })
 
-linkAbout.addEventListener("click", ()=> {
+linkAbout.addEventListener("click", (event)=> {
 
-    if (body.offsetWidth <= 850)
-    {
-        burger.click()
+    mobileClick()
 
-        myUl.style.transition = "none"
-    }
+    scrollToDiv(contentAbout.offsetTop,"bottom")
 
-    contentAbout.scrollIntoView(true)
-    
 })
 
 linkWorks.addEventListener("click", ()=> {
 
-    if (body.offsetWidth <= 850)
-    {
-        burger.click()
+    mobileClick()
 
-        myUl.style.transition = "none"
-    }
+    scrollToDiv(contentWorksTitle.offsetTop,"bottom")
 
-    contentWorks.scrollIntoView(true)
-    
 })
 
 linkContact.addEventListener("click", ()=> {
 
-    if (body.offsetWidth <= 850)
-    {
-        burger.click()
+    mobileClick()
 
-        myUl.style.transition = "none"
-    }
+    scrollToDiv(contentContact.offsetTop,"bottom")
 
-    contentContact.scrollIntoView(true)
-    
 })

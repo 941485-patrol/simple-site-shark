@@ -8,7 +8,7 @@ burger.addEventListener("click", ()=> {
 
         myUl.classList.toggle("anim-ul")
 
-        body.style.overflow = "hidden"
+        body.classList.toggle("anim-ul")
 
         myUlWrapper.classList.toggle("anim-ul")
     }
@@ -18,7 +18,7 @@ burger.addEventListener("click", ()=> {
 
         myUl.classList.toggle("anim-ul")
 
-        body.style.overflow = "unset"
+        body.classList.toggle("anim-ul")
 
         myUlWrapper.classList.toggle("anim-ul")
     }

@@ -3,6 +3,12 @@ body {
     padding:0;
 }
 
+body.anim-ul {
+    height:100%;
+    width:100%;
+    position:fixed;
+}
+
 @font-face {
     font-family: myFirstFont;
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
@@ -54,6 +60,12 @@ span.ham {
     margin:.2rem;
     transform: scale(1,1), rotate(0deg);
     transition: .25s ease-in-out;
+    z-index:10;
+}
+
+.open span.ham {
+    background-color:rgba(240,7,7,0.75);
+    box-shadow:0px 0px 50px 5px rgba(240,7,7,0.75);
 }
 
 .open .top  {
@@ -114,7 +126,8 @@ ul li {
 }
 
 ul.anim-ul li:hover{
-    background-color:#cfccc6;
+    text-shadow:0px 0px 40px rgba(240,7,7,1);
+    color:rgba(240,7,7,1);
     cursor:pointer;
 }
 
@@ -137,7 +150,6 @@ div.contents {
 
 .title {
     padding:1rem;
-    /* box-shadow: 12px 12px 50px -5px rgb(240, 7, 7); */
     box-shadow: 0px 0px 70px 5px rgba(240,7,7,0.75);
     color:white;
     text-shadow: 0px 0px 20px #000000;
@@ -210,18 +222,26 @@ input {
     background-color:rgba(0,0,0,0.4);
     top:0;
     left:0;
-    z-index:3;
+    z-index:20;
 }
 
 .custom-modal-content {
-    margin:2rem;
+    margin:50% 2rem 2rem 2rem;
     padding:.50rem;
-    height:75vh;
+    height:auto;
     background-color:#FFF;
 }
 
 .custom-modal-close {
-    text-align:left;
+    position:fixed;
+    left:1rem;
+    width:2rem;
+    text-align:center;
+    font-weight:bolder;
+    border-radius:50%;
+    color:rgba(240,7,7,0.75);
+    box-shadow:0px 0px 50px 5px rgba(240,7,7,0.75);
+    text-shadow:0px 0px 40px rgba(240,7,7,1);
     cursor:pointer;
 }
 
@@ -251,6 +271,12 @@ input {
     color:skyblue;
 }
 
+@media only screen and (min-width:450px) {
+    .custom-modal-content {
+        height:75%;
+        margin:2rem 2rem 2rem 2rem;
+    }}
+
 /* MEDIUM TO LARGE SCREEN */
 @media only screen and (min-width:850px) {
     nav {
@@ -259,6 +285,11 @@ input {
         padding-left:1.5rem;
         padding-right:1.5rem;
         background-color:#FFFFFF;
+    }
+
+    .custom-modal-content {
+        margin:2rem 2rem 2rem 2rem;
+        height:75%;
     }
 
     .jumbotron {

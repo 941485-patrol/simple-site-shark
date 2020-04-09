@@ -24,6 +24,8 @@ let imagess = document.getElementsByClassName("img")
 
 let customModal = document.getElementById("custom-modal")
 
+let customModalContent = document.getElementById("custom-modal-content")
+
 let customModalImage = document.getElementById("custom-modal-image")
 
 let modalClose = document.getElementById("modal-close")
@@ -51,17 +53,11 @@ window.onclick = (event)=>{
 
     }
 
-    if(event.target == customModal)
+    if(event.target == customModalContent)
     {
         customModal.style.display = "none"
     }
 }
-
-modalClose.addEventListener("click", ()=>{
-
-    customModal.style.display = "none"
-
-})
 
 for(var i = 0; i<imagess.length; i++)
 {

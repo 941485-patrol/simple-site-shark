@@ -141,7 +141,7 @@ div.contents {
     background-attachment: scroll;
     background-position: center;
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:contain;
     height:50vh;
     display:flex;
     justify-content:center;
@@ -198,11 +198,12 @@ input {
 }
 
 .img {
-    margin-top:.50rem;
-    margin-bottom:.50rem;
+    margin-top:5%;
+    margin-bottom:5%;
     margin-left:0;
     margin-right:0;
-    height:25vh;
+    height:auto;
+    max-width:100%;
     box-shadow: 0px 0px 48px 5px rgba(240,7,7,0.75);
 }
 
@@ -210,8 +211,7 @@ input {
     cursor:pointer;
 }
 .custom-modal-image {
-    width:100%;
-    height:100%;
+    width:90%;
 }
 
 .custom-modal {
@@ -226,10 +226,10 @@ input {
 }
 
 .custom-modal-content {
-    margin:50% 2rem 2rem 2rem;
-    padding:.50rem;
-    height:auto;
-    background-color:#FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
 }
 
 .custom-modal-close {
@@ -272,13 +272,29 @@ input {
 }
 
 @media only screen and (min-width:450px) {
-    .custom-modal-content {
-        height:75%;
-        margin:2rem 2rem 2rem 2rem;
+    .img {
+        flex:40%;
+        margin-top:5%;
+        margin-bottom:5%;
+        margin-left:5%;
+        margin-right:5%;
+        max-width:40%;
     }
 
-    .img {
-        height:50vh;
+    .works {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .custom-modal-image {
+        width:75%;
+        height:50%;
+    }
+
+    .jumbotron {
+        background-size:cover;
+        height:100vh;
     }
 }
 
@@ -292,12 +308,8 @@ input {
         background-color:#FFFFFF;
     }
 
-    .custom-modal-content {
-        margin:2rem 2rem 2rem 2rem;
-        height:75%;
-    }
-
     .jumbotron {
+        background-size:cover;
         height:100vh;
     }
 
@@ -355,18 +367,24 @@ input {
         color:#cfccc6;
     }
 
+    .img {
+        flex:40%;
+        margin-top:5%;
+        margin-bottom:5%;
+        margin-left:5%;
+        margin-right:5%;
+        max-width:40%;
+    }
+
     .works {
         display:flex;
         flex-direction:row;
         flex-wrap:wrap;
     }
 
-    .img {
-        flex:25%;
-        margin-top:.50rem;
-        margin-bottom:.50rem;
-        margin-left:.50rem;
-        margin-right:.50rem;
-        height:50vh;
+    .custom-modal-image {
+        width:50%;
+        height:50%;
     }
+
 }

@@ -1,5 +1,5 @@
 const mobileClick = () => {
-    if (body.offsetWidth <= 850)
+    if (body.offsetWidth < 768)
     {
         burger.click()
 

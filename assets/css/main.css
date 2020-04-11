@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding:0;
+    overflow-x:hidden;
 }
 
 body.anim-ul {
@@ -271,7 +272,8 @@ input {
     color:skyblue;
 }
 
-@media only screen and (min-width:450px) {
+/* MOBILE LARGE */
+@media only screen and (min-width:425px) {
     .img {
         flex:40%;
         margin-top:5%;
@@ -288,8 +290,7 @@ input {
     }
 
     .custom-modal-image {
-        width:75%;
-        height:50%;
+        width:50%;
     }
 
     .jumbotron {
@@ -298,8 +299,8 @@ input {
     }
 }
 
-/* MEDIUM TO LARGE SCREEN */
-@media only screen and (min-width:850px) {
+/* TABLET TO XL-DESKTOP */
+@media only screen and (min-width:768px) {
     nav {
         display:flex;
         flex-direction: row;
@@ -384,7 +385,6 @@ input {
 
     .custom-modal-image {
         width:50%;
-        height:50%;
     }
 
 }

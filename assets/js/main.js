@@ -44,6 +44,15 @@ window.addEventListener("resize", ()=> {
     
     myUlWrapper.classList.remove("anim-ul")
 
+    if (body.offsetWidth < 768 && body.classList.contains('darken')) {
+        if (myUl.classList.contains('redden')==false) {
+            myUl.classList.add('redden')
+        }
+    } else if (body.offsetWidth >=768 && body.classList.contains('darken')) {
+        if (myUl.classList.contains('redden')) {
+            myUl.classList.remove('redden')
+        }
+    }
 })
 
 window.onclick = (event)=>{
